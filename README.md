@@ -2,8 +2,6 @@
 
 An example of how to get C code running under nodejs wasm.
 
-.. And by extension, how to farm off resource-intensive tasks to C/WASM that are poorly kept within JS execution context.
-
 ## Contents
 
 - [`src/add.c`](src/add.c): A simple C file containing function `add()`
@@ -12,3 +10,6 @@ An example of how to get C code running under nodejs wasm.
 - [`build-wasm.sh`](build-wasm.sh): Script to compile C -> WASM
 - [`index.js`](index.js): Sample file for executing output file `/build/adder.wasm` within Node.js.
 
+## Motivation
+
+This shows how easy it is to farm off resource-intensive tasks to C/WASM that are poorly kept within JS execution context.
